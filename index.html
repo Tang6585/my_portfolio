@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Musa Inuwa - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Musa Inuwa
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            muhammadinuwamusa388@gmail.com 
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +2347011388959
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <!-- REPLACE THE src BELOW WITH YOUR OWN PROFILE IMAGE -->
+        <img src="html_finalprojimages/shadow.jpg" class="profile_image" alt="Musa Inuwa profile photo"/>
+      <div>
+        <h1>
+          Hi, I'm Musa Inuwa! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+        </h1>
+        <p>
+          I am a full stack developer with 1 year of experience in both application and presentation layers.
+          I have worked on applications and microservices deployed on IBM Cloud. 
+          I am a passionate student constantly learning new technologies.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        <!-- Added skills with proper icons (replace with local files if needed) -->
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60px"/>
+          <h6>PHP</h6>
+          <p>1 year experience</p> 
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60px"/>
+          <h6>MySQL</h6>
+          <p>1 year experience</p> 
+        </div>
+        <!-- Fifth skill: CSS -->
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60px"/>
+          <h6>CSS</h6>
+          <p>1 year experience</p> 
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h5>Chatbot</h5>
+          <ul>
+            <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, PHP, MySQL, JavaScript and IBM Watson Assistant</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h5>Sentiment Analyzer</h5>
+          <ul>
+            <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h5>Fashion Website</h5>
+          <ul>
+            <li>Created a styled multi‑page website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for payment gateway</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Musa is a brilliant full-stack developer with a knack for solving complex problems. He delivered our e‑commerce platform ahead of schedule, communicating clearly at every stage. His positive attitude and dedication made him a pleasure to work with.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I collaborated with Musa on a data‑driven web application. His deep understanding of PHP and MySQL ensured a robust backend, while his frontend skills created an intuitive user experience. He is proactive, reliable, and truly team‑oriented.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Musa consistently exceeded expectations during our startup's development phase. He grasps new concepts quickly, writes clean code, and always offers creative improvements. Any team would be lucky to have his energy and expertise.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Home icon button (if you have added it from Task 9) -->
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25-3m0 0-1-3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 11-18 0 z"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Popup for recommendations -->
+    <div class="popup" id="popup" class="flex_center" style="visibility: hidden;">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <!-- Optional: Add hover effect styling if not already in style.css -->
+    <style>
+      /* Simple hover effect for topmenu – add to your style.css if missing */
+      .topmenu:hover {
+        background-color: #f0f0f0;
+        color: #007bff;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+    </style>
+  </body>
+</html>
